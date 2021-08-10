@@ -1,9 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 
-abstract class HomeRepository {
-  Future<Either<String, List<String>>> getNames();
-}
+import 'home_repository.dart';
 
 class HomeRepositoryImpl implements HomeRepository {
   @override

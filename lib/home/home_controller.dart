@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fpflutter/home/home_repository.dart';
+import 'package:fpflutter/home/repositories/home_repository.dart';
 import 'package:fpflutter/home/home_state.dart';
 
 class HomeController {
@@ -14,6 +14,7 @@ class HomeController {
   });
 
   Future<void> getNames() async {
+    state = HomeStateLoading();
     final response = await this.repository.getNames();
     state = response.fold(
       (l) => HomeStateError(l),

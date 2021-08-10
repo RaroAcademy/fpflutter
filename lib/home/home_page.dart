@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fpflutter/home/home_controller.dart';
-import 'package:fpflutter/home/home_repository.dart';
 import 'package:fpflutter/home/home_state.dart';
+
+import 'repositories/home_repository_impl.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
